@@ -1,0 +1,28 @@
+# cell line IDs across first row 
+
+# apply supervised learning approach -> KNN classifier to predict drug sensitivity
+# this is for panel of cell lines based on sample
+
+# data is from Drug Sensitivity Prediction Challenge
+
+# Cell lines derived from set of breast tumors OR normal tissue 
+# each cell line exposed independently to five drugs 
+# GI50 was measured 
+# GI50 -> represents drug concentration at which growth is prevented by 50 percent
+# GI50 values have been log10 transformed -> higher values reflect greater sensitivity 
+
+# Drug sensitivity values have been binarized 
+# "1" corresponds to drug-sensitive cell line 
+# "0" corresponds to drug-resistant cell line 
+
+# Goal: Build KNN classifier that predicts which cell lines are sensitive to each drug 
+
+# Drug sensitivity & sample expression data into single text file 
+
+# Drug sensitivity data is 2nd to 6th row. 
+# first column is drug name and rest of columns are drug sensitivity values
+# "NA" values -> missing values -> drug sens. not measured well
+
+# sample expression data
+# first column is sample name 
+# rest of columns are sample-level summaries (already transformed and normalized) accross breast cancer cell lines
