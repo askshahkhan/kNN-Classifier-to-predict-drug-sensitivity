@@ -1,7 +1,5 @@
 # kNN Classifier Model to predict drug sensitivity based on gene expression profiles
 
-*Completed in collaboration with Ibrahim Irfanullah*
-
 A dynamic kNN classifier on the data was implemented, using the Pearson correlation coefficient as the similarity metric between cell lines’ expression profiles. The model is able to take in a cell line expression profile as input and produce a prediction score indicating how likely the patient cell line expression profile is sensitive or resistant to any of the 5 drugs listed in DREAM_data.
 
 These prediction scores for each cell line were calculated by taking the fraction of the k-nearest neighbors that are sensitive to the corresponding drug. A 46 (patient samples) by 5 (drugs) matrix was generated with all these prediction scores.
